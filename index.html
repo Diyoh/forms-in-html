@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+</head>
+
+<body>
+
+
+
+
+      <!--all about forms -->
+
+
+
+  <!--Simple forms-->
+  <form action="results.html" method="GET" enctype="multipart/form-data">
+    <div>
+      <label for="name">name:</label>
+      <input type="text" name="name" id="name" value="shiloh">
+    </div>
+    <div>
+      <label for="password">password:</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <!--end of simple Forms-->
+
+    <!--forms with placeholder and required meaning, you must out a text in the field in the soecified format-->
+    <div>
+      <label for="email">email:</label>
+      <input type="email" name="email" placeholder="123@example.com" id="email" required>
+    </div>
+
+
+    <!--forms with input type numbers provides a counter option and the step attribute enables you to increment by the soecififed srep value-->
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" min="1" max="20" step="3">
+    </div>
+
+
+      <!--forms with input type date provides a field for date-->
+    <div>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date">
+    </div>
+    <h1>favourite food</h1>
+    <div>
+      <input type="checkbox" name="banana" id="banana">
+      <label for="banana">Banana:</label>
+    </div>
+    <div>
+      <input type="checkbox" name="Peanuts" id="Peanuts">
+      <label for="banana">Peanuts:</label>
+    </div>
+
+
+
+  <!--forms with the same name enables you to choose just one of the options provided-->
+    <div>
+      <h2>gender</h2> <br>
+      <label for="male">sex</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </div>
+    <div>
+      <label for="female">female</label>
+      <input type="radio" name="gender" id="female" value="female">
+    </div>
+
+
+
+      <!--the select attribute give you a drop down of the various available options -->
+    <div>
+      <label for="car">best Car:</label>
+      <select name="cars" id="car">
+        <option value="mercedes">mercedes</option>
+        <option value="audi">audi</option>
+        <option value="rangerover">Rangerover</option>
+        <option value="legs">legs</option>
+      </select>
+    </div
+
+
+        <!--field specified for you to input ;plain text is calle the textarea -->
+    <div>
+      <label for="bio">Biography</label>
+      <textarea name="bio" id="bio" rows="10" cols="55">my name is Shiloh</textarea>
+    </div>
+
+        <!--forms with type file enables you to choose a file from your pc to upload ensure on the fo[rm opening tag you have ecntype as s[ecified above]] -->
+    <div>
+      <label for="file">file</label>
+      <input type="file" name="file" id="file" value="file">
+    </div>
+    <div>
+      <label for="phone">phone</label>
+      <input type="tel" name="phone" id="phone" value="+237">
+    </div>
+    <div>
+      <label for="url">url</label>
+      <input type="url" name="url" id="url" placeholder="url">
+    </div>
+
+
+        <!--forms with type color give you a field where you can actually choose the color you want to use -->
+    <div>
+      <label for="color">color</label>
+      <input type="color" name="color" id="color">
+    </div>
+
+
+        <!--forms with inout type range provides a slder -->
+    <div>
+      <label for="range">Input range</label><br>
+      <input type="range" name="range" id="range">
+    </div>
+
+        <!--type search provides an area wher you can type text to bee searched -->
+    <div>
+      <label for="search">Type word to Search</label><br>
+      <input type="search" name="search" id="search" placeholder="Rsort algorithm">
+    </div>
+    <div>
+      <label for="datetime">Local datetime</label><br>
+      <input type="datetime-local" name="datetime" id="datetime ">
+    </div>
+    <br>
+
+
+        <!--jyst like the select attribute this actually gives a ist of options to be selected -->
+    <div>
+      <label for="datalist">Best Browser</label><br>
+      <input list="browsers">
+      <datalist id="browsers">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+    </div>
+    <di>
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+    </di>
+
+
+  </form><br>
+
+  <p>Copyright &copy; shilohland graphics 2022</p>
+
+</body>
+
+</html>
